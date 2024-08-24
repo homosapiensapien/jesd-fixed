@@ -1,5 +1,6 @@
 :root {
 	--blue: #2876bb;
+	--dark-blue: #314d83;
 	--light-gray: #cccccc;
 	--link-color: #2980c1;
 }
@@ -16,6 +17,12 @@ h4,
 h5,
 h6 {
 	font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	color: var(--dark-blue);
+	font-size: 3rem;
+	font-weight: 700;
 }
 
 a,
@@ -74,10 +81,6 @@ a:hover {
 
 .nav-logo-alt {
 	display: none;
-}
-
-.home-img {
-	margin-bottom: 0.5em;
 }
 
 @media screen and (max-width: 1500px) {
