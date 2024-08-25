@@ -175,6 +175,7 @@ a:hover {
 .expander {
 	display: none;
 	border: none;
+	background-color: transparent;
 }
 
 .secondary-nav {
