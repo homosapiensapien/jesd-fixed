@@ -132,7 +132,7 @@ a:hover {
 	}
 
 	.nav-links li a {
-		padding: 0;
+		padding-left: 0;
 	}
 
 	.nav-links ul {
@@ -384,7 +384,11 @@ input:focus {
 
 .subnav-link a {
 	color: white;
-	font-weight: bold;
+	font-weight: 700;
+}
+
+.subnav-link {
+	padding: 0.25em 0;
 }
 
 .nav-link .container {
@@ -398,5 +402,9 @@ input:focus {
 		display: block;
 		margin-left: 1rem;
 		padding: 1em 1em;
+	}
+
+	.subnav {
+		position: absolute;
 	}
 }
