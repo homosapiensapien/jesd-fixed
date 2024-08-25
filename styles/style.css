@@ -150,9 +150,6 @@ a:hover {
 	}
 
 	.nav-links li {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
 		width: 100%;
 	}
 
@@ -294,10 +291,6 @@ input:focus {
 	.schools-nav {
 		display: none;
 	}
-
-	.nav-link:first-child > .subnav {
-		margin-top: 10rem;
-	}
 }
 
 .search-mobile {
@@ -372,8 +365,6 @@ input:focus {
 
 .subnav {
 	display: none;
-	position: absolute;
-	margin-top: 7rem;
 }
 
 .subnav-content {
@@ -396,17 +387,13 @@ input:focus {
 	font-weight: bold;
 }
 
-/* .subnav-link a:hover {
-	text-decoration: none !important;
-	color: var(--link-color) !important;
-} */
+.nav-link .container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
 
 @media screen and (min-width: 1301px) {
-	.subnav {
-		margin-top: 0rem;
-		/* box-shadow: 0 0 0.3em #4d4d4d80; */
-	}
-
 	.subnav-content {
 		display: block;
 		margin-left: 1rem;
