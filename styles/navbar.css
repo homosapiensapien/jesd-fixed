@@ -1,0 +1,372 @@
+/*styling the nav*/
+
+.main-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: black;
+	padding: 0.5em 2.5em;
+}
+
+.main-nav a {
+	color: black;
+}
+
+.nav-links ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-links li {
+	list-style-type: none;
+	font-weight: 700;
+}
+
+.nav-link:hover .nav-link-a {
+	text-decoration: underline !important;
+	text-decoration-thickness: 5px !important;
+	text-decoration-color: var(--blue) !important;
+	text-underline-offset: 7px !important;
+}
+
+.nav-link-a {
+	text-decoration: none !important;
+	padding: 0 1em;
+}
+
+.nav-logo {
+	max-width: 500px;
+	width: 100%;
+	height: 5rem;
+}
+
+.nav-logo-alt {
+	display: none;
+}
+
+@media screen and (max-width: 1500px) {
+	.main-nav {
+		padding: 1em 0.5em;
+	}
+
+	.nav-logo-alt {
+		display: block;
+		max-width: 250px;
+		width: 100%;
+	}
+
+	.nav-logo {
+		display: none;
+	}
+}
+
+.toggle-button {
+	position: absolute;
+	top: 4.2rem;
+	right: 1rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 22px;
+}
+
+.toggle-button .bar {
+	height: 3px;
+	width: 100%;
+	border-radius: 10px;
+	background-color: black;
+}
+
+@media screen and (max-width: 1300px) {
+	.toggle-button {
+		display: flex;
+	}
+
+	.main-nav {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.nav-links {
+		display: none;
+	}
+
+	.nav-links li a {
+		padding-left: 0;
+	}
+
+	.nav-links ul {
+		display: block;
+		width: 100%;
+	}
+
+	.nav-links li,
+	.search-mobile {
+		padding: 1.5em 2em;
+	}
+
+	.nav-links li:hover {
+		text-decoration: none;
+	}
+
+	.nav-links li {
+		width: 100%;
+	}
+
+	.expander {
+		display: flex !important;
+		color: var(--blue);
+	}
+
+	.expander::after {
+		content: '\25B6';
+	}
+
+	.nav-links.active {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+}
+
+.expander {
+	display: none;
+	border: none;
+	background-color: transparent;
+}
+
+.secondary-nav {
+	background-color: var(--blue);
+	margin-bottom: 0.25em;
+	padding: 0.5em 4.35em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: white;
+	font-weight: 700;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+.search-mobile {
+	text-align: center;
+}
+
+.secondary-nav .search input,
+.search-mobile input {
+	background-color: white;
+	border: none;
+	border-radius: 3px 0 0 3px;
+}
+
+.search-mobile input {
+	border: 1px solid black;
+}
+
+textarea:focus,
+input:focus {
+	outline: black solid 1px;
+}
+
+.secondary-nav .search input::placeholder,
+.search-mobile input::placeholder {
+	color: black;
+}
+
+.secondary-nav .search button {
+	border: none;
+	float: right;
+	background-color: var(--light-gray);
+	border-radius: 0 3px 3px 0;
+}
+
+.search-mobile button {
+	border: solid 1px black;
+	background-color: var(--light-gray);
+	border-radius: 0 3px 3px 0;
+}
+
+.secondary-nav-right {
+	display: flex;
+	flex-direction: row-reverse;
+	gap: 2em;
+}
+
+.secondary-nav-left {
+	display: flex;
+	flex-direction: row;
+	gap: 1em;
+}
+
+.district-school-links {
+	font-weight: 700;
+}
+
+.district-school-links ul {
+	display: flex;
+	padding: 0;
+}
+
+.district-school-links li {
+	list-style: none;
+}
+
+.district-school-links .schools-nav {
+	border-right: 1px solid white;
+	padding-right: 0.5em;
+}
+
+.district-school-links .district-link {
+	padding-left: 0.5em;
+}
+
+.district-school-links a {
+	color: white;
+}
+
+@media screen and (max-width: 1300px) {
+	.secondary-nav {
+		padding: 0.25em 0.5em;
+		display: block;
+	}
+
+	.search-mobile {
+		display: block !important;
+	}
+
+	.search {
+		display: none;
+	}
+
+	.secondary-nav {
+		display: flex;
+	}
+
+	.secondary-nav-right {
+		gap: 0;
+		flex-direction: row;
+	}
+
+	.schools-nav {
+		display: none;
+	}
+}
+
+.search-mobile {
+	display: none;
+}
+
+.quicklinks a {
+	color: white;
+	font-weight: 700;
+}
+
+.schools-nav a {
+	color: white;
+	font-weight: 400;
+}
+
+.schools-dropdown li > h2 {
+	color: white;
+	font-weight: 700;
+}
+
+.schools-dropdown h2 {
+	margin-top: 1em;
+	font-size: 1rem;
+}
+
+.elem-dropdown {
+	margin-top: 0 !important;
+}
+
+.quicklinks a:hover
+.schools-nav a:hover {
+	text-decoration: underline;
+}
+
+.quicklinks-dropdown,
+.schools-dropdown {
+	display: none;
+	position: absolute;
+	top: 30px;
+	background-color: var(--blue);
+	padding: 0.5em 1.5em;
+	z-index: 100;
+}
+
+.quicklinks-dropdown ul,
+.schools-dropdown ul {
+	padding: 0;
+	flex-direction: column;
+}
+
+.quicklinks-dropdown li,
+.schools-button li {
+	list-style: none;
+	padding: 0.25em 0;
+}
+
+.quicklinks-dropdown ul:first-child,
+.schools-dropdown ul:first-child {
+	padding-top: 0.5em;
+}
+
+.quicklinks:hover .quicklinks-dropdown,
+.schools-nav:hover .schools-dropdown {
+	display: block;
+}
+
+.quicklinks-button,
+.schools-button {
+	cursor: pointer;
+}
+
+.subnav {
+	display: none;
+}
+
+.subnav-content {
+	background-color: var(--blue);
+	z-index: 100;
+	margin-top: 0.399rem;
+	font-weight: 400;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding: 0.5em 0.5em;
+}
+
+.nav-link:hover .subnav {
+	display: block;
+}
+
+.subnav-link a {
+	color: white;
+	font-weight: 700;
+}
+
+.subnav-link {
+	padding: 0.25em 0;
+}
+
+.nav-link .container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+@media screen and (min-width: 1301px) {
+	.subnav-content {
+		display: block;
+		margin-left: 1rem;
+		padding: 1em 1em;
+	}
+
+	.subnav {
+		position: absolute;
+	}
+}
