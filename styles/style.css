@@ -23,8 +23,10 @@ h6 {
 
 h1 {
 	color: var(--dark-blue);
-	font-size: 3rem;
+	font-size: 2.75rem;
 	font-weight: 700;
+	line-height: 1.5;
+	margin: 0.25em 0 0.75em 0;
 }
 
 a,
@@ -38,7 +40,33 @@ a:hover {
 	text-decoration: underline;
 }
 
+.body-wrapper {
+	margin: 0.5em 17.5em ;
+}
+
+@media screen and (max-width: 1800px) {
+	.body-wrapper {
+		margin: 0 7.5em;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.body-wrapper {
+		margin: 0 5em;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.body-wrapper {
+		margin: 0 1em;
+	}
+}
+
 /* styling breadcrumb nav */
+.breadcrumbs {
+	margin: 0.25em 0;
+}
+
 .breadcrumbs ul {
 	padding: 0;
 }
@@ -49,12 +77,15 @@ a:hover {
 
 .breadcrumbs li {
 	display: inline-block;
-	font-size: 0.875rem;
-	background-color: ;
+	font-size: 0.75rem;
 }
 
-.breadcrumbs li a {
-	color: black;
+.breadcrumbs li a,
+.breadcrumbs li span {
+	color: white;
+	background-color: var(--blue);
+	padding: 0.25em 0.5em;
+	border-radius: 5px;
 }
 
 .breadcrumbs li::after {
@@ -63,4 +94,95 @@ a:hover {
 
 .breadcrumbs li:last-child::after {
 	content: '';
+}
+
+.breadcrumbs li:last-child span {
+	background-color: var(--light-blue);
+	font-weight: 700;
+}
+
+/* styling school directory */
+.school-list-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	column-gap: 7.5em;
+	row-gap: 5em;
+}
+
+@media screen and (min-width: 2500px) {
+	.school-list-content {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.school-list-content {
+		column-gap: 5em;
+		row-gap: 2.5em;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.school-list-content {
+		column-gap: 3em;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.school-list-content {
+		grid-template-columns: 1fr;
+	}
+}
+
+.school-list-item-text {
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+}
+
+.school-list-item-text p {
+	margin-bottom: 0.75em;
+}
+
+.school-list-item-text ul {
+	margin-top: auto;
+	list-style-type: none;
+	padding: 0;
+}
+
+.school-list-item-text li {
+	margin: 0.25em 0;
+}
+
+.school-list-item-text h2 {
+	font-size: 1.5rem;
+}
+
+.school-list-item {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	gap: 1em;
+	align-items: center;
+
+	/* border: 1px solid var(--light-gray); */
+}
+
+@media screen and (max-width: 1575px) {
+	.school-list-item {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.school-list-item {
+		flex-wrap: wrap;
+	}
+}
+
+.school-list-item img {
+	width: 100%;
+	align-items: center;
 }

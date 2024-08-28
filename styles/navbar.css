@@ -91,6 +91,7 @@
 
 	.nav-links {
 		display: none;
+		z-index: 100000000;
 	}
 
 	.nav-links li a {
