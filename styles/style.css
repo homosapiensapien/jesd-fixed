@@ -40,6 +40,15 @@ a:hover {
 	text-decoration: underline;
 }
 
+/* a {
+&[href^="http"] {
+&::after {
+content: "\2197\0020";
+white-space: nowrap;
+		}
+	}
+} */
+
 .body-wrapper {
 	margin: 0.5em 17.5em ;
 }
