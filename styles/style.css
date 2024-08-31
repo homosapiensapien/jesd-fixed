@@ -31,7 +31,8 @@ h1 {
 
 a,
 a:visited,
-a:hover {
+a:hover,
+.ext {
 	color: var(--link-color);
 	text-decoration: none;
 }
@@ -40,34 +41,52 @@ a:hover {
 	text-decoration: underline;
 }
 
-/* a {
-&[href^="http"] {
-&::after {
-content: "\2197\0020";
-white-space: nowrap;
-		}
-	}
-} */
+.active-link {
+	font-weight: 700;
+}
+
+.ext::after {
+	content: url(../assets/icons/launch.svg);
+	white-space: nowrap;
+	padding-left: 0.15em;
+}
+
+.body-content {
+	display: flex;
+	margin: 0 auto;
+	max-width: 100%;
+	gap: 2.5em;
+}
+
+.body-main-content {
+	width: 100%;
+}
 
 .body-wrapper {
-	margin: 0.5em 17.5em ;
+	margin: 1.5em 10em ; 
+}
+
+@media screen and (max-width: 1000px) {
+	.body-wrapper {
+		flex-wrap: wrap;
+	}
 }
 
 @media screen and (max-width: 1800px) {
 	.body-wrapper {
-		margin: 0 7.5em;
+		margin: 1.5em 5em;
 	}
 }
 
 @media screen and (max-width: 800px) {
 	.body-wrapper {
-		margin: 0 5em;
+		margin: 1.5em 3em;
 	}
 }
 
 @media screen and (max-width: 500px) {
 	.body-wrapper {
-		margin: 0 1em;
+		margin: 1.5em 1em;
 	}
 }
 
@@ -99,6 +118,7 @@ white-space: nowrap;
 
 .breadcrumbs li::after {
 	content: '\003E';
+	font-weight: 700;
 }
 
 .breadcrumbs li:last-child::after {
@@ -110,12 +130,52 @@ white-space: nowrap;
 	font-weight: 700;
 }
 
+/* styling sidebar nav */
+.sidebar-nav {
+	border: 1px solid var(--light-gray);
+	width: 100%;
+}
+
+.sidebar-nav h2 {
+	padding: 0.25em 0.5em;
+	background-color: var(--blue);
+}
+
+.sidebar-nav h2 a {
+	color: white;
+}
+
+.sidebar-nav ul {
+	list-style: none;
+	padding: 0.5em 0;
+}
+
+.sidebar-nav li {
+	margin: 0.25em 12px;
+	display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+	.body-content {
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (min-width: 1001px) {
+	.sidebar-nav {
+		flex-basis: 275px;
+		flex-grow: 0;
+		flex-shrink: 0;
+		align-self: start;
+	}
+}
+
 /* styling school directory */
 .school-list-content {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 
-	column-gap: 7.5em;
+	column-gap: 5em;
 	row-gap: 5em;
 }
 
@@ -128,7 +188,6 @@ white-space: nowrap;
 @media screen and (max-width: 1200px) {
 	.school-list-content {
 		column-gap: 5em;
-		row-gap: 2.5em;
 	}
 }
 
@@ -195,3 +254,16 @@ white-space: nowrap;
 	width: 100%;
 	align-items: center;
 }
+
+/* board members */
+.board-members {
+	display: grid;
+	gap: 3em;
+	grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+/* @media screen and (min-width: 801px) {
+	.board-members {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	}
+} */

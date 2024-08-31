@@ -8,6 +8,10 @@
 	padding: 0.5em 2.5em;
 }
 
+.home-img {
+	margin-bottom: 0;
+}
+
 .main-nav a {
 	color: black;
 }
@@ -91,7 +95,6 @@
 
 	.nav-links {
 		display: none;
-		z-index: 100000000;
 	}
 
 	.nav-links li a {
@@ -150,6 +153,7 @@
 	position: fixed;
 	width: 100%;
 	top: 0;
+	z-index: 10000000;
 }
 
 .search-mobile {
@@ -161,6 +165,7 @@
 	background-color: white;
 	border: none;
 	border-radius: 3px 0 0 3px;
+	position: relative;
 }
 
 .search-mobile input {
@@ -370,4 +375,25 @@ input:focus {
 	.subnav {
 		position: absolute;
 	}
+}
+
+/* footer */
+.footer {
+	padding: 0.5em 1em;
+	background-color: var(--blue);
+	color: white;
+	font-weight: 700;
+	display: flex;
+}
+
+.footer ul {
+	list-style: none;
+	display: flex;
+	padding: 0;
+	gap: 1.5em;
+}
+
+.footer li a {
+	color: white;
+	font-weight: 700;
 }
