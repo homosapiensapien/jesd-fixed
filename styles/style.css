@@ -411,7 +411,7 @@ img.display-slide {
 }
 
 .index-h2 {
-	font-size: clamp(1rem, 2.25rem, 4rem);
+	font-size: clamp(1rem, 3rem, 4rem);
 }
 
 .welcome-top p {
