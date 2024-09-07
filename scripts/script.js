@@ -15,3 +15,40 @@ toggleButton.addEventListener('click', () => {
   }
 });
 
+// carousel
+
+const slides = document.querySelectorAll('.slides img');
+let slideIndex = 0;
+let intervalID = null;
+
+document.addEventListener('DOMContentLoaded', initializeSlider);
+
+function initializeSlider() {
+	slides[slideIndex].classList.add('display-slide');
+	intervalID = setInterval(nextSlide, 5000);
+}
+
+function showSlide(index) {
+	if (index >= slides.length) {
+		slideIndex = 0;
+	}
+	else if (index < 0) {
+		slideIndex = slides.length - 1;
+	}
+
+	slides.forEach(slide => {
+		slide.classList.remove('display-slide');
+	});
+	slides[slideIndex].classList.add('display-slide');
+}
+
+function prevSlide() {
+	// clearInterval(intervalID);
+	slideIndex--;
+	showSlide(slideIndex);
+}
+
+function nextSlide() {
+	slideIndex++;
+	showSlide(slideIndex);
+}
