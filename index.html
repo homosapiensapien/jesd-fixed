@@ -23,7 +23,8 @@
     <title>Jefferson Elementary School District</title>
   </head>
   <body>
-    <header>
+    <a href="#content" class="skip-link">Skip to main content</a>
+    <header>          
       <nav class="navbar">
         <div class="secondary-nav">
           <div class="secondary-nav-left">
@@ -173,22 +174,21 @@
 
     <div class="body-wrapper" id="bodyWrapper">
       <div class="body-content">
-        <div class="body-main-content">
-          <section aria-label="Image slideshow" class="image-slider">
+        <main id="content" class="body-main-content">
+          <section aria-label="Image slideshow" class="image-slider index-section">
             <div class="slider">
               <div class="slides">
                 <img class="slide" src="assets/images/index/ribboncutting2.jpg" alt="Eastmoor Heights ribbon cutting ceremony">
                 <img class="slide" src="assets/images/index/mht-hero.jpg" alt="Children watching presentation at the library">
-                <img class="slide" src="assets/images/index/woodrow-wilson-kids.jpg" alt="">
-                <img class="slide" src="assets/images/index/mht-hero-2.jpg" alt="TRP soccer players kneeling">
+                <img class="slide" src="assets/images/index/woodrow-wilson-kids.jpg" alt="Child having hand marked while walking">
+                <img class="slide" src="assets/images/index/mht-hero-2.jpg" alt="Teachers preparing for performance">
               </div>
           
               <button class="slider-btn prev" onclick="prevSlide()">&#060</button>
               <button class="slider-btn next" onclick="nextSlide()">&#062</button>
             </div>
           </section>
-
-          <section class="welcome">
+          <section class="welcome index-section">
             <div class="welcome-container">
               <div class="welcome-top">
                 <h2 class="index-h2 centered-text">Welcome</h2>
@@ -198,11 +198,11 @@
             <div class="welcome-item-container">
               <div class="welcome-item">
                 <h2>Welcoming</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima in ipsa voluptate veritatis cumque tempore nemo natus iusto blanditiis. Consectetur illum illo vero cum assumenda. Voluptatem magnam ex accusamus consequatur?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima in ipsa voluptate veritatis cumque tempore nemo natus iusto blanditiis. Consectetur illum illo vero cum assumenda. Voluptatem magnam ex accusamus consequatur? Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
               </div>
               <div class="welcome-item">
                 <h2>Engaging</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eos magnam quasi, veritatis maxime esse, doloremque eaque qui adipisci vitae eum praesentium facilis ea! Enim vel iusto vero amet velit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eos magnam quasi, veritatis maxime esse, doloremque eaque qui adipisci vitae eum praesentium facilis ea! Enim vel iusto vero amet velit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima in ipsa voluptate veritatis cumque tempore nemo natus.<p>
               </div>
               <div class="welcome-item">
                 <h2>Safe</h2>
@@ -210,7 +210,152 @@
               </div>
             </div>
           </section>
-        </div>
+
+          <div class="announcements-events-container index-section">
+            <section class="announcements announcements-events-item">
+              <div class="announcements-top">
+                <h2>Announcements</h2>
+                <div><a href="/news">VIEW ALL NEWS</a></div>
+              </div>
+              <div class="announcements-items-container">
+                <article class="announcements-item">
+                  <time>September 65, 2024</time>
+                  <h3><a href="news/">Lorem ipsum dolar sit amet</a></h3>
+                  <div><a href="news/">Read more</a></div>
+                </article>
+
+                <article class="announcements-item">
+                  <time>September 11, 2024</time>
+                  <h3><a href="news/">School board meeting on September 11</a></h3>
+                  <div><a href="news/">Read more</a></div>
+                </article>
+              
+                <article class="announcements-item">
+                  <time>August 19, 2024</time>
+                  <h3><a href="news/">JESD's 2024-25 Local Control Accountability Plan has been released</a></h3>
+                  <div><a href="news/">Read more</a></div>
+                </article>
+
+                <article class="announcements-item">
+                  <time>July 31, 2024</time>
+                  <h3><a href="news/">School lunch applications are now available</a></h3>
+                  <div><a href="news/">Read more</a></div>
+                </article>
+              </div>
+            </section>
+
+            <section class="events announcements-events-item">
+              <div class="events-top">
+                <h2>Upcoming Events</h2>
+                <div><a href="/calendar">VIEW CALENDAR</a></div>
+              </div>
+
+              <div class="events-container">
+                <article class="events-item">
+                  <div class="events-item-left">
+                    <time class="events-item-date">
+                      <span class="events-item-date-month">Sept</span>
+                      <span class="events-item-date-day">11</span>
+                    </time>
+                  </div>
+                  <div class="events-item-right">
+                    <a href="/events">
+                      <h3>Governing board meeting</h3>
+                    </a>
+                    <time class="events-item-time">
+                      <i class="fa-regular fa-clock" style="color: #636363;"></i>
+                      <span class="event-item-time-duration">7 - 9:30 PM</span>
+                    </time>
+                    <div class="events-item-location">
+                      <i class="fa-solid fa-location-dot" style="color: #636363"></i>
+                      <span class="events-item-location-marker">District Office</span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="events-item">
+                  <div class="events-item-left">
+                    <time class="events-item-date">
+                      <span class="events-item-date-month">Sept</span>
+                      <span class="events-item-date-day">18</span>
+                    </time>
+                  </div>
+                  <div class="events-item-right">
+                    <a href="/events">
+                      <h3>Second Harvest Food Bank</h3>
+                    </a>
+                    <time class="events-item-time">
+                      <i class="fa-regular fa-clock" style="color: #636363;"></i>
+                      <span class="event-item-time-duration">9:30 - 11:30 AM</span>
+                    </time>
+                    <div class="events-item-location">
+                      <i class="fa-solid fa-location-dot" style="color: #636363"></i>
+                      <span class="events-item-location-marker">Thomas R. Pollicita Intermediate School</span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="events-item">
+                  <div class="events-item-left">
+                    <time class="events-item-date">
+                      <span class="events-item-date-month">Sept</span>
+                      <span class="events-item-date-day">19</span>
+                    </time>
+                  </div>
+                  <div class="events-item-right">
+                    <a href="/events">
+                      <h3>JESD Family Cafe</h3>
+                    </a>
+                    <time class="events-item-time">
+                      <i class="fa-regular fa-clock" style="color: #636363;"></i>
+                      <span class="event-item-time-duration">5 - 5:45 PM</span>
+                    </time>
+                    <div class="events-item-location">
+                      <i class="fa-solid fa-location-dot" style="color: #636363"></i>
+                      <span class="events-item-location-marker">Virtual</span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="events-item">
+                  <div class="events-item-left">
+                    <time class="events-item-date">
+                      <span class="events-item-date-month">Sept</span>
+                      <span class="events-item-date-day">25</span>
+                    </time>
+                  </div>
+                  <div class="events-item-right">
+                    <a href="/events">
+                      <h3>Governing board meeting</h3>
+                    </a>
+                    <time class="events-item-time">
+                      <i class="fa-regular fa-clock" style="color: #636363;"></i>
+                      <span class="event-item-time-duration">7 - 9:30 PM</span>
+                    </time>
+                    <div class="events-item-location">
+                      <i class="fa-solid fa-location-dot" style="color: #636363"></i>
+                      <span class="events-item-location-marker">District Office</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+
+          <section class="latest-news index-section">
+            <div class="latest-news-top">
+              <h2 class="index-h2 centered-text">Latest News</h2>
+            </div>
+            <div class="latest-news-container">
+              <div class="latest-news-item"></div>
+              <div class="latest-news-item"></div>
+              <div class="latest-news-item"></div>
+              <div class="latest-news-item"></div>
+              <div class="latest-news-item"></div>
+              <div class="latest-news-item"></div>
+            </div>
+          </section>
+        </main>
       </div>
     </div>
 
@@ -220,7 +365,8 @@
         <li><a href="about/policies-and-regulations/accessibility">Accessibility</a></li>
       </ul>
       <div>
-        <i class="fa-brands fa-facebook" style="color: #fff;"></i>
+        <a href="https://www.facebook.com/JeffersonElementarySD/"><i class="fa-brands fa-facebook" style="color: #fff;"></i></a>
+        <a href="https://www.instagram.com/jefferson_esd/"><i class="fa-brands fa-instagram" style="color: #fff"></i></a>
       </div>
     </footer>
   </body>
