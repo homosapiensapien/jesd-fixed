@@ -125,7 +125,7 @@
 	}
 
 	.expander::after {
-		content: '\U000025C0\U0000FE0E';
+		content: '"\25C0 \FE0E';
 	}
 
 	.nav-links.active {
