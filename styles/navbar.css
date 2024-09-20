@@ -387,17 +387,30 @@ input:focus {
 	font-weight: 700;
 	display: flex;
 	justify-content: space-between;
+
+	ul {
+		list-style: none;
+		display: flex;
+		padding: 0;
+		gap: 1.5em;
+		margin: 0;
+	}
+
+	li a {
+		color: white;
+		font-weight: 700;
+	}
+
+	div {
+		gap: 0.75em;
+		display: flex;
+	}
 }
 
-.footer ul {
-	list-style: none;
-	display: flex;
-	padding: 0;
-	gap: 1.5em;
-	margin: 0;
-}
-
-.footer li a {
-	color: white;
-	font-weight: 700;
+@media screen and (min-width: 801px) {
+	.footer {
+		div {
+			gap: 1em;
+		}
+	}
 }
